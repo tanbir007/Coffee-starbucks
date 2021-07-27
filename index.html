@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="" class="logo"><img src="images/logo.png"> </a>
+            <ul>
+               <li> <a href="#">Home</a></li>
+               <li> <a href="#">Menu</a></li>
+               <li> <a href="#">Whats New</a></li>
+               <li> <a href="#">Contact</a></li>
+               
+            </ul>
+        </header>
+        <div class="container">
+            <div class='textBox'>
+                <h2>Its not just Coffee <br> Its <span>StarBucks</span></h2>
+                <p>Every day, we go to work hoping to do two things: share great coffee with our friends and help make the world a little better. It was true when the first Starbucks opened in 1971, and it’s just as true today.
+                    <br>
+
+                    Back then, the company was a single store in Seattle’s historic Pike Place Market. From just a narrow storefront, Starbucks offered some of the world’s finest fresh-roasted whole bean coffees. The name, inspired by Moby Dick, evoked the romance of the high seas and the seafaring tradition of the early coffee traders.
+                    <br>
+                    
+                    In 1981, Howard Schultz (Starbucks chairman and chief executive officer) had first walked into a Starbucks store. From his first cup of Sumatra, Howard was drawn into Starbucks and joined a year later.
+                    
+                  
+                    
+                    From the beginning, Starbucks set out to be a different kind of company. One that not only celebrated coffee and the rich tradition, but that also brought a feeling of connection.
+                    <br
+                    >
+                    <b> Our mission to inspire and nurture the human spirit – one person, one cup, and one neighborhood at a time.</b>
+                   </p>
+                <a href="#">Learn more</a>
+
+
+            </div>
+        </div>
+
+        <div class="imgBox">
+            <img src="images/img1.png" class='StarBucks'>
+        </div>
+
+<ul class="thumb">
+    <li><img src='images/thumb1.png' onClick="slideImage('images/img1.png');colorChange('#01714')"></li>
+    <li><img src='images/thumb2.png' onClick="slideImage('images/img2.png');colorChange('#eb749')"></li>
+    <li><img src='images/thumb3.png' onClick="slideImage('images/img3.png');colorChange('#d752b')"></li>
+</ul>
+<ul class="social">
+<li><a href='#'><img src='images/facebook.png'></a></li>
+<li><a href='#'><img src='images/twitter.png'></a></li>
+<li><a href='#'><img src='images/instagram.png'></a></li>
+</ul>
+    </section>
+    <script type="text/javascript">
+    function slideImage(coffee) {
+        document.querySelector('.StarBucks').src= coffee;
+        console.log('coffee')
+    }
+
+    function colorChange(color) {
+        const circle = document.querySelector('.circle');
+        circle.style.background =color;
+    }
+    
+    </script>
+</body>
+</html>
